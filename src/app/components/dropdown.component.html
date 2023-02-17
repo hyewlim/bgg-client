@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="processForm()">
+
+  <div>
+    <p>Games per page: </p>
+    <select id="limit" formControlName="limit" >
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+    </select>
+
+  </div>
+
+  <br>
+
+  <div>
+    <label for="name">Search</label>
+    <input type="text" formControlName="name" id="name">
+  </div>
+
+  <br>
+
+  <button type="submit">Search</button>
+
+</form>
